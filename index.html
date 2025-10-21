@@ -2,6 +2,7 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>รายการขายสินค้าพร้อมส่ง</title>
 <style>
     body { font-family: Arial, sans-serif; margin: 20px; background-color: #f9f9f9; }
@@ -9,8 +10,14 @@
     h1 { margin-bottom: 10px; }
     .contact-note { font-size: 18px; margin-bottom: 5px; }
     .note { font-size: 14px; color: #e91e63; margin-top: 0; }
-    .products { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
-    .card { background-color: white; border: 1px solid #ddd; border-radius: 8px; width: 320px; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
+    /* Responsive product grid using CSS Grid */
+    .products {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+    .card { background-color: white; border: 1px solid #ddd; border-radius: 8px; max-width: 320px; width: 100%; overflow: hidden; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; flex-direction: column; }
     .main-image { width: 100%; height: 200px; object-fit: cover; cursor: pointer; }
     .card-body { padding: 15px; flex-grow: 1; display: flex; flex-direction: column; }
     .card-title { font-size: 18px; font-weight: bold; margin: 0 0 8px 0; }
@@ -32,12 +39,32 @@
     .modal .prev, .modal .next { cursor: pointer; position: absolute; top: 50%; color: #fff; font-size: 40px; padding: 16px; margin-top: -50px; user-select: none; }
     .modal .prev { left: 0; }
     .modal .next { right: 0; }
+
+    /* Responsive adjustments */
+    @media (max-width: 600px) {
+        /* Reduce the gap and adjust columns for smaller screens */
+        .products {
+            gap: 15px;
+        }
+        /* Make thumbnails smaller on small devices */
+        .gallery img {
+            width: 60px;
+            height: 60px;
+        }
+        /* Expand call button to full width and increase font size for easier tapping */
+        .card-action a {
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            text-align: center;
+        }
+    }
 </style>
 </head>
 <body>
     <div class="header">
         <h1>สินค้าราคาพิเศษ เตรียมรีโนเวทร้านนวด ย่านไนท์บาร์ซ่าเชียงราย</h1>
-        <p class="contact-note">โทรสอบถาม John Kampanat 061-2833838 :</p>
+        <p class="contact-note">โทรสอบถาม John Kampanat 061-2833838:</p>
         <p class="note">ของทุกชิ้นสามารถใช้งานได้ปกติเปิดการขาย ราคานี้เพียง 2 วัน เท่านั้น </p>
     </div>
     <div class="products">
