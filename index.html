@@ -1225,7 +1225,9 @@
     <!-- Visitor counter script using CountAPI -->
     <script>
     // Fetch and update visitor count. This call increments the counter on every page load.
-    fetch('https://api.countapi.xyz/update/johnakhaya-alt/myshop?amount=1')
+    // Use the `hit` endpoint with your domain as the namespace to increment the counter and
+    // automatically create it if it doesn't exist【692130622404985†L99-L106】.
+    fetch('https://api.countapi.xyz/hit/johnakhaya-alt.github.io/myshop')
         .then(function(response) {
             return response.json();
         })
