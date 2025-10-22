@@ -31,6 +31,13 @@
     .card-action { margin-top: 10px; text-align: center; }
     .card-action a { display: inline-block; padding: 8px 12px; border-radius: 4px; background-color: #4CAF50; color: white; text-decoration: none; font-size: 14px; }
     .card-action a:hover { background-color: #43A047; }
+
+    /* Visitor count styling */
+    .visitor-count {
+        font-size: 14px;
+        color: #333;
+        margin-top: 5px;
+    }
     /* Modal styles */
     /* Modal overlay and content styles */
     .modal {
@@ -115,10 +122,11 @@
         <h1>สินค้าราคาพิเศษ เตรียมรีโนเวทร้านนวด ย่านไนท์บาร์ซ่าเชียงราย</h1>
         <p class="contact-note">โทรสอบถาม John Kampanat 061-2833838:</p>
         <p class="note">ของทุกชิ้นสามารถใช้งานได้ปกติเปิดการขาย ราคานี้เพียง 2 วัน เท่านั้น</p>
+        <p class="visitor-count">ผู้เข้าชมสะสม: <span id="visitor-count">0</span> ครั้ง</p>
     </div>
     <div class="products">
-        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042022/1-1_3_moyokn.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042021/1-1_2_dejlgg.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042022/1-1_4_res6wj.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042022/1-1_3_moyokn.jpg" alt="เคาน์เตอร์ต้อนรับไม้" class="main-image" data-index="0">
+        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042021/1-1_1_afgmqq.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042021/1-1_2_dejlgg.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042022/1-1_3_moyokn.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042022/1-1_4_res6wj.jpg">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042021/1-1_1_afgmqq.jpg" alt="เคาน์เตอร์ต้อนรับไม้" class="main-image" data-index="0">
             <div class="card-body">
                 <div class="card-title">เคาน์เตอร์ต้อนรับไม้</div>
                 <div class="card-category">1. รับแขก | 🪵  เฟอร์นิเจอร์หลัก</div>
@@ -209,7 +217,7 @@
             </div>
         </div>
         <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042033/1-7_1_cblype.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042032/1-7_2_lycjwh.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042032/1-7_3_hqbwms.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042032/1-7_2_lycjwh.jpg" alt="ชั้นวางของใหญ่" class="main-image" data-index="0">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042033/1-7_1_cblype.jpg" alt="ชั้นวางของใหญ่" class="main-image" data-index="0">
             <div class="card-body">
                 <div class="card-title">ชั้นวางของใหญ่</div>
                 <div class="card-category">1. รับแขก | 🪵  เฟอร์นิเจอร์หลัก</div>
@@ -225,7 +233,7 @@
             </div>
         </div>
         <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042035/1-8_1_qibiok.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042036/1-8_2_nvncr0.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042036/1-8_2_nvncr0.jpg" alt="โต๊ะเล็กกลม (หน้าทางเข้า) แถมผ้าปู" class="main-image" data-index="0">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042035/1-8_1_qibiok.jpg" alt="โต๊ะเล็กกลม (หน้าทางเข้า) แถมผ้าปู" class="main-image" data-index="0">
             <div class="card-body">
                 <div class="card-title">โต๊ะเล็กกลม (หน้าทางเข้า) แถมผ้าปู</div>
                 <div class="card-category">1. รับแขก | 🪵  เฟอร์นิเจอร์หลัก</div>
@@ -357,11 +365,11 @@
             </div>
         </div>
         <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042058/1-17_hpi3n5.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042058/1-17_hpi3n5.jpg" alt="พัดลมติดผนังHatari" class="main-image" data-index="0">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042058/1-17_hpi3n5.jpg" alt="พัดลมติดผนัง" class="main-image" data-index="0">
             <div class="card-body">
-                <div class="card-title">พัดลมติดผนังHatari</div>
+                <div class="card-title">พัดลมติดผนัง</div>
                 <div class="card-category">1. รับแขก | ⚡  เครื่องใช้ไฟฟ้า / อุปกรณ์</div>
-                <div class="card-price"><span class="original">990 บาท</span> <span class="sale">390 บาท</span></div>
+                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">350 บาท</span></div>
                 <div class="quantity">จำนวน: 1 ชิ้น</div>
                 <div class="card-action">
                     <a href="tel:0612833838">โทรเลย</a>
@@ -435,18 +443,18 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042070/2-23_1_mlvwfu.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042070/2-23_1_mlvwfu.jpg" alt="พัดลมติดผนังHitachi" class="main-image" data-index="0">
+        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042070/2-23_1_mlvwfu.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042074/2-23_2_oiapjo.jpg">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042070/2-23_1_mlvwfu.jpg" alt="พัดลมติดผนัง" class="main-image" data-index="0">
             <div class="card-body">
-                <div class="card-title">พัดลมติดผนังHitachi</div>
+                <div class="card-title">พัดลมติดผนัง</div>
                 <div class="card-category">2. ห้องนวดเท้า | ⚡  เครื่องใช้ไฟฟ้า / ระบบ</div>
-                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">390 บาท</span></div>
+                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">350 บาท</span></div>
                 <div class="quantity">จำนวน: 2 ชิ้น</div>
                 <div class="card-action">
                     <a href="tel:0612833838">โทรเลย</a>
                 </div>
                 <div class="gallery">
-                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042070/2-23_1_mlvwfu.jpg" alt="พัดลมติดผนังHitachi" data-index="1">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042074/2-23_2_oiapjo.jpg" alt="พัดลมติดผนัง" data-index="1">
                 </div>
             </div>
         </div>
@@ -737,17 +745,17 @@
             </div>
         </div>
         <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042153/10-45_1_dftlq4.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042156/10-45_2_jihwe8.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042153/10-45_1_dftlq4.jpg" alt="พัดลมติดผนังMitsumaru" class="main-image" data-index="0">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042153/10-45_1_dftlq4.jpg" alt="พัดลมติดผนัง" class="main-image" data-index="0">
             <div class="card-body">
-                <div class="card-title">พัดลมติดผนังMitsumaru</div>
+                <div class="card-title">พัดลมติดผนัง</div>
                 <div class="card-category">10. ห้องไทยชั้น2 | 🌬️  เครื่องใช้ไฟฟ้าและอุปกรณ์เสริม</div>
-                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">350 บาท</span></div>
+                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">390 บาท</span></div>
                 <div class="quantity">จำนวน: 2 ชิ้น</div>
                 <div class="card-action">
                     <a href="tel:0612833838">โทรเลย</a>
                 </div>
                 <div class="gallery">
-                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042156/10-45_2_jihwe8.jpg" alt="พัดลมติดผนังMitsumaru" data-index="1">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042156/10-45_2_jihwe8.jpg" alt="พัดลมติดผนัง" data-index="1">
                 </div>
             </div>
         </div>
@@ -1019,19 +1027,21 @@
                 </div>
             </div>
         </div>
-        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_2_hzljnl.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_p9hm1i.jpg">
-            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_2_hzljnl.jpg" alt="พัดลมติดผนังMitsumaru" class="main-image" data-index="0">
+        <div class="card" data-images="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_1_a5misw.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_2_hzljnl.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042221/15-64_3_l5k9o3.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_4_ak0btn.jpg,https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_p9hm1i.jpg">
+            <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_1_a5misw.jpg" alt="พัดลมติดผนัง 2 ตัว" class="main-image" data-index="0">
             <div class="card-body">
-                <div class="card-title">พัดลมติดผนังMitsumaru</div>
+                <div class="card-title">พัดลมติดผนัง 2 ตัว</div>
                 <div class="card-category">15. ห้องไทยชั้น3 | 💡  ระบบไฟและอุปกรณ์ไฟฟ้า</div>
-                <div class="card-price"><span class="original">990 บาท</span> <span class="sale">350 บาท</span></div>
+                <div class="card-price"><span class="original">790 บาท</span> <span class="sale">390 บาท</span></div>
                 <div class="quantity">จำนวน: 2 ชิ้น</div>
                 <div class="card-action">
                     <a href="tel:0612833838">โทรเลย</a>
                 </div>
                 <div class="gallery">
-                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_2_hzljnl.jpg" alt="พัดลมติดผนังMitsumaru" data-index="1">
-                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_p9hm1i.jpg" alt="พัดลมติดผนังMitsumaru" data-index="2">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042220/15-64_2_hzljnl.jpg" alt="พัดลมติดผนัง 2 ตัว" data-index="1">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042221/15-64_3_l5k9o3.jpg" alt="พัดลมติดผนัง 2 ตัว" data-index="2">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_4_ak0btn.jpg" alt="พัดลมติดผนัง 2 ตัว" data-index="3">
+                    <img src="https://res.cloudinary.com/dadpho3hd/image/upload/v1761042224/15-64_p9hm1i.jpg" alt="พัดลมติดผนัง 2 ตัว" data-index="4">
                 </div>
             </div>
         </div>
@@ -1210,6 +1220,24 @@
             }});
         }});
     }})();
+    </script>
+
+    <!-- Visitor counter script using CountAPI -->
+    <script>
+    // Fetch and update visitor count. This call increments the counter on every page load.
+    fetch('https://api.countapi.xyz/update/johnakhaya-alt/myshop?amount=1')
+        .then(function(response) {
+            return response.json();
+        })
+        .then(function(data) {
+            var counterElem = document.getElementById('visitor-count');
+            if (counterElem) {
+                counterElem.textContent = data.value;
+            }
+        })
+        .catch(function(err) {
+            console.error('Visitor count fetch failed:', err);
+        });
     </script>
 </body>
 </html>
