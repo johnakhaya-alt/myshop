@@ -1224,22 +1224,17 @@
 
     <!-- Visitor counter script using CountAPI -->
     <script>
-    // Fetch and update visitor count. This call increments the counter on every page load.
-    // Use the `hit` endpoint with your domain as the namespace to increment the counter and
-    // automatically create it if it doesn't exist【692130622404985†L99-L106】.
-    fetch('https://api.countapi.xyz/hit/johnakhaya-alt.github.io/myshop')
-        .then(function(response) {
-            return response.json();
-        })
-        .then(function(data) {
-            var counterElem = document.getElementById('visitor-count');
-            if (counterElem) {
-                counterElem.textContent = data.value;
-            }
-        })
-        .catch(function(err) {
-            console.error('Visitor count fetch failed:', err);
-        });
+    // JSONP callback function for CountAPI. This function will be called by the CountAPI script
+    // with the current count when the page loads. It updates the text of the visitor-count span.
+    function updateVisitorCount(data) {
+        var counterElem = document.getElementById('visitor-count');
+        if (counterElem) {
+            counterElem.textContent = data.value;
+        }
+    }
     </script>
+    <!-- Include CountAPI script to increment and fetch the counter.
+         The query parameter 'callback=updateVisitorCount' tells CountAPI to call our function. -->
+    <script async src="https://api.countapi.xyz/hit/johnakhaya-alt.github.io/myshop?callback=updateVisitorCount"></script>
 </body>
 </html>
